@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare Pro - Login</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>HealthCare Pro</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#patient-login">Patient Login</a></li>
+                    <li><a href="#doctor-login">Doctor Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="patient-login" class="container">
+        <h2>Patient Login</h2>
+        <form id="patientForm">
+            <label for="patient-email">Email:</label>
+            <input type="email" id="patient-email" name="email" required>
+
+            <label for="patient-password">Password:</label>
+            <input type="password" id="patient-password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <section id="doctor-login" class="container">
+        <h2>Doctor Login</h2>
+        <form id="doctorForm">
+            <label for="doctor-email">Email:</label>
+            <input type="email" id="doctor-email" name="email" required>
+
+            <label for="doctor-password">Password:</label>
+            <input type="password" id="doctor-password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 HealthCare Pro. All rights reserved.</p>
+    </footer>
+
+    <script src="newpg.js"></script>
+</body>
+</html>
