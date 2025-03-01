@@ -1,117 +1,86 @@
-/* General styles */
+/* General body styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f8ff; /* Light blue background */
-    color: #333;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
-/* Header styles */
-header {
-    background-color: #0077b6; /* Deep blue */
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-header .header-container h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    color: #333;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-}
-
-/* Introduction section */
-.intro {
-    text-align: center;
-    padding: 2rem;
     background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.intro h2 {
-    color: #005f73;
-}
-
-/* Form container */
-.container {
+/* Container for the login form */
+.login-container {
     background-color: #ffffff;
-    border: 1px solid #0077b6;
     padding: 2rem;
-    margin: 2rem auto;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
     text-align: center;
-    color: #0077b6;
+    border: 2px solid #81d4fa;
 }
 
+/* Heading styling */
+h2 {
+    margin-bottom: 1.5rem;
+    color: #0288d1;
+    font-size: 2rem;
+}
+
+/* Form styling */
 .form-group {
     margin-bottom: 1.5rem;
+    text-align: left;
 }
 
-.form-group label {
+label {
     display: block;
-    margin-bottom: 0.5rem;
     font-weight: bold;
-    color: #005f73;
+    color: #0277bd;
+    margin-bottom: 0.5rem;
 }
 
-.form-group input,
-.form-group select,
-.form-group button {
+input {
     width: 100%;
     padding: 0.75rem;
     font-size: 1rem;
-    border: 1px solid #0077b6;
-    border-radius: 5px;
+    border: 1px solid #81d4fa;
+    border-radius: 8px;
+    background-color: #f1f8fe;
+    color: #0277bd;
 }
 
-.form-group input:focus,
-.form-group select:focus {
+input:focus {
     outline: none;
-    border-color: #005f73;
+    border-color: #0288d1;
+    box-shadow: 0 0 8px rgba(2, 136, 209, 0.6);
 }
 
-button {
-    background-color: #0077b6;
+/* Button styling */
+.btn {
+    background-color: #0288d1;
     color: white;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
     border: none;
-    padding: 1rem;
-    font-size: 1.2rem;
+    border-radius: 8px;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background 0.3s ease;
+    width: 100%;
 }
 
-button:hover {
-    background-color: #005f73;
+.btn:hover {
+    background-color: #0277bd;
 }
 
-/* Footer styles */
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #0077b6;
-    color: white;
-    margin-top: 2rem;
+/* Responsive Design */
+@media (max-width: 600px) {
+    .login-container {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
 }
