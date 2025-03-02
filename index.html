@@ -9,14 +9,24 @@
 <body>
     <header>
         <div class="container">
-            <h1>CureVault...</h1>
+            <h1>CareVault...</h1>
             <h1>The Only Health Expert</h1>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li class="dropdown">
+                        <a href="#services">Services ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#primary-care">Primary Care</a></li>
+                            <li><a href="#emergency">Emergency Services</a></li>
+                            <li><a href="#mental-health">Mental Health Support</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li class="login">
+                        <a href="#login"><img src="user.png"Login" width="20"> Login</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -30,11 +40,30 @@
         </div>
     </section>
 
-    <section id="services" class="container">
-        <h2>Our Services</h2>
-        <div class="service-card">Primary Care</div>
-        <div class="service-card">Emergency Services</div>
-        <div class="service-card">Mental Health Support</div>
+    <section id="about" class="container">
+        <h2>About Us</h2>
+        <p>
+            #### Putting You in Control of Your Health Data
+            
+            At MedChain, we believe that your medical records should be yours—not stored in hospital databases or controlled by third parties. Too often, people struggle with lost records, slow transfers, or unauthorized access to their private health information. We built MedChain to solve these problems by giving you full control over your data in a secure and decentralized way.
+            
+            Using blockchain technology and IPFS, MedChain ensures that your records are safe, private, and tamper-proof. No one—not even us—can access them without your permission. You decide who gets access, for how long, and what they can see. Doctors can retrieve your records instantly once you approve them, eliminating the hassle of paperwork, long wait times, and misplaced files.
+            
+            Why MedChain?
+            ✅ You’re in Charge – No one can access your records without your approval.
+            ✅ Safe & Private – Data is stored securely using decentralized technology.
+            ✅ Fast & Convenient – No more paperwork or waiting for records to transfer.
+            ✅ No Middlemen – Your health data stays with you, not with hospitals or third parties.
+            
+            How It Works
+            Sign up using MetaMask—no need for usernames or passwords.
+            Store your medical records securely on the blockchain.
+            Grant or revoke access to doctors with a simple click.
+            Doctors can view records only with your approval, ensuring total privacy.
+            
+            At MedChain, we’re not just building a platform—we’re building a new standard for healthcare privacy and security. Whether you’re managing chronic conditions, switching doctors, or simply want peace of mind knowing your records are safe and always accessible, MedChain is here for you.
+            
+            💙 Your health. Your data. Your choice.</p>
     </section>
 
     <footer>
